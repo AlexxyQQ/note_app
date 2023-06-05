@@ -2,9 +2,9 @@
   "notes": [
     {
       "id": 1,
-      "title": "Note 12",
-      "content": "This is the content of note 12",
-      "important": true
+      "title": "Note 1",
+      "content": "This is the content of note 1",
+      "important": false
     },
     {
       "id": 2,
@@ -13,10 +13,16 @@
       "important": true
     },
     {
-      "title": "asdas",
-      "content": "asdsa",
-      "important": true,
-      "id": 4
+      "id": 4,
+      "title": "Note 3",
+      "content": "This is the content of note 1",
+      "important": false
+    },
+    {
+      "title": "Note 4",
+      "content": "This is the content of note 4",
+      "important": false,
+      "id": 5
     }
   ]
 }
