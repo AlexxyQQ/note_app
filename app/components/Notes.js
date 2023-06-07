@@ -8,11 +8,16 @@ export default function NotesView({
   return (
     <div>
       <br />
-      <button onClick={() => setToggle(!toggle)}>
+      <button
+        className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+        onClick={() => setToggle(!toggle)}
+      >
         {" "}
         {toggle ? "Show All" : "Show Important"}
       </button>
-      <h1>Notes</h1>
+      <h1 style={{ color: "Black", fontSize: 50, fontWeight: "bold" }}>
+        Notes
+      </h1>
       <hr />
       <br />
       <ul>
@@ -22,10 +27,18 @@ export default function NotesView({
             <p>{note.content}</p>
             <p>{note.important ? "Important" : "Not Important"}</p>
             <br />
-            <button style={
-              
-            } onClick={() => handleDelete(note.id)}>Delete</button>{" "}
-            <button onClick={() => onEdit(note)}>Edit</button>
+            <button
+              onClick={() => handleDelete(note.id)}
+              className="btn btn-warning"
+            >
+              Delete
+            </button>{" "}
+            <button
+              onClick={() => onEdit(note)}
+              className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+            >
+              Edit
+            </button>
             <br />
           </li>
         ))}
@@ -35,7 +48,7 @@ export default function NotesView({
 }
 
 const h2_style = {
-  color: "red",
+  color: "Black",
   fontSize: 25,
   fontWeight: "bold",
 };
